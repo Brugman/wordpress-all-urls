@@ -148,7 +148,7 @@ function display_all_terms( $taxonomy = false )
 
     $permalinks = get_tax_permalinks( $taxonomy );
 
-    echo '<h2>'.$taxonomy.'</h2>';
+    echo '<h2>'.$taxonomy.' ('.count( $permalinks ).')</h2>';
     display_code_begin();
     if ( !empty( $permalinks ) ):
         foreach ( $permalinks as $permalink )
